@@ -9,8 +9,9 @@ ARCH="amd64"
 HOMEPATH="/home/ubuntu"
 
 # Updating and installing stuff
-sudo apt-get update
-sudo apt-get install -y git curl lldpd
+echo "Updating and installing stuff ..."
+sudo apt-get update -qq
+sudo apt-get install -y -qq git curl lldpd
 
 if [ ! -e "/vagrant/go.tar.gz" ]; then
     # No given go binary
