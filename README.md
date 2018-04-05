@@ -15,6 +15,6 @@ The VM running napalm will require atleast 1024MB to run or else napalm will fai
 
 ## Tree ##
 gobgp-lab
-├── README.md
-├── Vagrantfile
-└── bootstrap.sh
+	├── README.md
+	├── Vagrantfile
+	└── bootstrap.sh
