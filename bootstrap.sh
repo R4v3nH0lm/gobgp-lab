@@ -6,7 +6,7 @@ OS="linux"
 ARCH="amd64"
 
 # Home of the vagrant user, not the root which calls this script
-HOMEPATH="/home/vagrant"
+HOMEPATH="/home/ubuntu"
 
 # Updating and installing stuff
 sudo apt-get update
