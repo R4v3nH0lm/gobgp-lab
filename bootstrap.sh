@@ -1,4 +1,5 @@
 #!/bin/bash
+# Credit to Maxi Binder (https://github.com/mbndr/vagrant-golang) for providing the 99% of this script.
 
 # Golang installation variables
 VERSION="1.10"
