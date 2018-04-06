@@ -3,8 +3,9 @@
 ## Setup ##
 
 ### Required Software ###
-Download and install VirtualBox.
-Download and install Vagrant.
+Download and install: 
+  + VirtualBox
+  + Vagrant
 
 #### Vagrant ####
 This will require the following vagrant boxes be available on your system:
