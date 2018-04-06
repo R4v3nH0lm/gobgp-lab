@@ -5,8 +5,8 @@ This lab is intended to give the user a enviroment where two Ubuntu VM's have go
 
 ### Required Software ###
 Download and install: 
-  + VirtualBox
-  + Vagrant
+ - VirtualBox
+ - Vagrant
 
 #### Vagrant ####
 This will require the following vagrant boxes be available on your system:
