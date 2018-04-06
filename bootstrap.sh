@@ -13,6 +13,10 @@ echo "Updating and installing stuff ..."
 sudo apt-get update -qq
 sudo apt-get install -y -qq git curl lldpd
 
+# Reload the lldpd service to make sure it is running.
+echo "Restarting lldpd ..."
+sudo service lldpd restart
+
 if [ ! -e "/vagrant/go.tar.gz" ]; then
     # No given go binary
     # Download golang
@@ -62,3 +66,16 @@ touch "$HOMEPATH/.bashrc"
     echo '# Automatically change to the vagrant dir'
     echo 'cd /vagrant'
 } >> "$HOMEPATH/.bashrc"
+
+# Download and install gobgp & gobgpd
+echo "Installing gobgp(d) ..."
+GOBGPD="github.com/osrg/gobgp/gobgpd"
+GOBGP="github.com/osrg/gobgp/gobgp"
+
+export GOROOT="$HOMEPATH/.go"
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=/vagrant/gopath
+export PATH=$PATH:$GOPATH/bin
+
+go get "$GOBGPD"
+go get "$GOBGP"
